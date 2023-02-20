@@ -9,20 +9,20 @@
                 </v-list-item>
                 <v-divider></v-divider>
                 <v-list density="compact" nav>
-                    <v-list-item prepend-icon="mdi-home-city" title="Home" value="home"></v-list-item>
-                    <v-list-item prepend-icon="mdi-account" title="My Account" value="account"></v-list-item>
-                    <v-list-item prepend-icon="mdi-account-group-outline" title="Users" value="users"></v-list-item>
-                    <v-list-item prepend-icon="mdi-home-city" title="Home" value="home"></v-list-item>
-                    <v-list-item prepend-icon="mdi-account" title="My Account" value="account"></v-list-item>
-                    <v-list-item prepend-icon="mdi-account-group-outline" title="Users" value="users"></v-list-item>
-                    <v-list-item prepend-icon="mdi-home-city" title="Home" value="home"></v-list-item>
-                    <v-list-item prepend-icon="mdi-account" title="My Account" value="account"></v-list-item>
-                    <v-list-item prepend-icon="mdi-account-group-outline" title="Users" value="users"></v-list-item>
-                    <v-list-item prepend-icon="mdi-home-city" title="Home" value="home"></v-list-item>
-                    <v-list-item prepend-icon="mdi-account" title="My Account" value="account"></v-list-item>
-                    <v-list-item prepend-icon="mdi-account-group-outline" title="Users" value="users"></v-list-item>
-                    <v-list-item prepend-icon="mdi-home-city" title="Home" value="home"></v-list-item>
-                    <v-list-item prepend-icon="mdi-account" title="My Account" value="account"></v-list-item>
+                    <v-list-item prepend-icon="mdi-view-dashboard" title="Dashboard" value="dashboard"></v-list-item>
+                    <v-list-item prepend-icon="mdi-nature-people" title="Employee" value="employee"></v-list-item>
+                    <v-list-item prepend-icon="mdi-book-clock" title="Schedule" value="schedule"></v-list-item>
+                    <v-list-item prepend-icon="mdi-exit-run" title="Staff Leave" value="staff-leave"></v-list-item>
+                    <v-list-item prepend-icon="mdi-account-details" title="Account" value="account"></v-list-item>
+                    <v-list-item prepend-icon="mdi-swap-vertical-bold" title="Import-Export" value="import-export"></v-list-item>
+                    <v-list-item prepend-icon="mdi-calendar-text" title="Event" value="event"></v-list-item>
+                    <v-list-item prepend-icon="mdi-account-group" title="Meeting" value="meeting"></v-list-item>
+                    <v-list-item prepend-icon="mdi-account-lock" title="Management" value="management"></v-list-item>
+                    <v-list-item prepend-icon="mdi-alpha-r-circle" title="Role" value="role"></v-list-item>
+                    <v-list-item prepend-icon="mdi-account" title="Users" value="users"></v-list-item>
+                    <v-list-item prepend-icon="mdi-database-cog" title="Database" value="database"></v-list-item>
+                    <v-list-item prepend-icon="mdi-key-chain" title="Setting" value="setting"></v-list-item>
+                    <v-list-item prepend-icon="mdi-export" title="Log Out" value="logout"></v-list-item>
                 </v-list>
             </v-navigation-drawer>
             <v-main style="height: 690px"></v-main>
@@ -35,20 +35,20 @@ export default {
         return {
             drawer: true,
             items: [
-                { title: 'Home', icon: 'mdi-home-city' },
-                { title: 'My Account', icon: 'mdi-account' },
-                { title: 'Users', icon: 'mdi-account-group-outline' },
-                { title: 'Home', icon: 'mdi-home-city' },
-                { title: 'My Account', icon: 'mdi-account' },
-                { title: 'Users', icon: 'mdi-account-group-outline' },
-                { title: 'Home', icon: 'mdi-home-city' },
-                { title: 'My Account', icon: 'mdi-account' },
-                { title: 'Users', icon: 'mdi-account-group-outline' },
-                { title: 'Home', icon: 'mdi-home-city' },
-                { title: 'My Account', icon: 'mdi-account' },
-                { title: 'Users', icon: 'mdi-account-group-outline' },
-                { title: 'Home', icon: 'mdi-home-city' },
-                { title: 'My Account', icon: 'mdi-account' },
+                { title: 'Dashboard', icon: 'mdi-home-city' },
+                { title: 'Employee', icon: 'mdi-account' },
+                { title: 'Schedule', icon: 'mdi-account-group-outline' },
+                { title: 'Staff Leave', icon: 'mdi-home-city' },
+                { title: 'Account', icon: 'mdi-account' },
+                { title: 'Import-Export', icon: 'mdi-account-group-outline' },
+                { title: 'Event', icon: 'mdi-home-city' },
+                { title: 'Meeting', icon: 'mdi-account' },
+                { title: 'Management', icon: 'mdi-account-group-outline' },
+                { title: 'Role', icon: 'mdi-home-city' },
+                { title: 'Users', icon: 'mdi-account' },
+                { title: 'Database', icon: 'mdi-account-group-outline' },
+                { title: 'Setting', icon: 'mdi-home-city' },
+                { title: 'Log Out', icon: 'mdi-account' },
             ],
             rail: true,
         }
