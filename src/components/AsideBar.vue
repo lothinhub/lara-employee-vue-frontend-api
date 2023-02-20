@@ -1,7 +1,7 @@
 <template>
     <v-card>
         <v-layout>
-            <v-navigation-drawer v-model="drawer" :rail="rail" permanent @click="rail = false">
+            <v-navigation-drawer color="primary" v-model="drawer" :rail="rail" permanent @click="rail = false">
                 <v-list-item prepend-avatar="https://randomuser.me/api/portraits/men/85.jpg" title="John Leider" nav>
                     <template v-slot:append>
                         <v-btn variant="text" icon="mdi-chevron-left" @click.stop="rail = !rail"></v-btn>
@@ -9,20 +9,48 @@
                 </v-list-item>
                 <v-divider></v-divider>
                 <v-list density="compact" nav>
-                    <v-list-item prepend-icon="mdi-view-dashboard" title="Dashboard" value="dashboard"></v-list-item>
-                    <v-list-item prepend-icon="mdi-nature-people" title="Employee" value="employee"></v-list-item>
-                    <v-list-item prepend-icon="mdi-book-clock" title="Schedule" value="schedule"></v-list-item>
-                    <v-list-item prepend-icon="mdi-exit-run" title="Staff Leave" value="staff-leave"></v-list-item>
-                    <v-list-item prepend-icon="mdi-account-details" title="Account" value="account"></v-list-item>
-                    <v-list-item prepend-icon="mdi-swap-vertical-bold" title="Import-Export" value="import-export"></v-list-item>
-                    <v-list-item prepend-icon="mdi-calendar-text" title="Event" value="event"></v-list-item>
-                    <v-list-item prepend-icon="mdi-account-group" title="Meeting" value="meeting"></v-list-item>
-                    <v-list-item prepend-icon="mdi-account-lock" title="Management" value="management"></v-list-item>
-                    <v-list-item prepend-icon="mdi-alpha-r-circle" title="Role" value="role"></v-list-item>
-                    <v-list-item prepend-icon="mdi-account" title="Users" value="users"></v-list-item>
-                    <v-list-item prepend-icon="mdi-database-cog" title="Database" value="database"></v-list-item>
-                    <v-list-item prepend-icon="mdi-key-chain" title="Setting" value="setting"></v-list-item>
-                    <v-list-item prepend-icon="mdi-export" title="Log Out" value="logout"></v-list-item>
+                    <v-list-item prepend-icon="mdi-view-dashboard" title="Dashboard" value="dashboard">
+                        <router-link to="/"></router-link>
+                    </v-list-item>
+                    <v-list-item prepend-icon="mdi-nature-people" title="Employee" value="employee">
+                        <router-link to="/EmployeeView"></router-link>
+                    </v-list-item>
+                    <v-list-item prepend-icon="mdi-book-clock" title="Schedule" value="schedule">
+                        <router-link to="/"></router-link>
+                    </v-list-item>
+                    <v-list-item prepend-icon="mdi-exit-run" title="Staff Leave" value="staff-leave">
+                        <router-link to="/"></router-link>
+                    </v-list-item>
+                    <v-list-item prepend-icon="mdi-account-details" title="Account" value="account">
+                        <router-link to="/"></router-link>
+                    </v-list-item>
+                    <v-list-item prepend-icon="mdi-swap-vertical-bold" title="Import-Export" value="import-export">
+                        <router-link to="/"></router-link>
+                    </v-list-item>
+                    <v-list-item prepend-icon="mdi-calendar-text" title="Event" value="event">
+                        <router-link to="/"></router-link>
+                    </v-list-item>
+                    <v-list-item prepend-icon="mdi-account-group" title="Meeting" value="meeting">
+                        <router-link to="/"></router-link>
+                    </v-list-item>
+                    <v-list-item prepend-icon="mdi-account-lock" title="Management" value="management">
+                        <router-link to="/"></router-link>
+                    </v-list-item>
+                    <v-list-item prepend-icon="mdi-alpha-r-circle" title="Role" value="role">
+                        <router-link to="/"></router-link>
+                    </v-list-item>
+                    <v-list-item prepend-icon="mdi-account" title="Users" value="users">
+                        <router-link to="/"></router-link>
+                    </v-list-item>
+                    <v-list-item prepend-icon="mdi-database-cog" title="Database" value="database">
+                        <router-link to="/"></router-link>
+                    </v-list-item>
+                    <v-list-item prepend-icon="mdi-key-chain" title="Setting" value="setting">
+                        <router-link to="/"></router-link>
+                    </v-list-item>
+                    <v-list-item prepend-icon="mdi-export" title="Log Out" value="logout">
+                        <router-link to="/"></router-link>
+                    </v-list-item>
                 </v-list>
             </v-navigation-drawer>
             <v-main style="height: 690px"></v-main>

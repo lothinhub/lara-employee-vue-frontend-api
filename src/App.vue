@@ -7,7 +7,6 @@
     </v-main>
   </v-app>
 </template>
-
 <script>
 import AsideBar from './components/AsideBar.vue';
 import MenuBar from './components/MenuBar.vue';
