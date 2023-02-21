@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    <h2>Role</h2>
+  </div>
 </template>
 
 <script>

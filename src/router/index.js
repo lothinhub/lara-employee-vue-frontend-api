@@ -1,24 +1,31 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-// import HomeView from '../views/HomeView.vue'
-import DashboardView from "../views/DashboardView.vue";
-import AccountView from "../views/AccountView.vue";
-import DatabaseView from "../views/DatabaseView.vue";
-import EmployeeView from "../views/EmployeeView.vue";
-import EventView from "../views/EventView.vue";
-import ImportExportView from "../views/ImportExportView.vue";
-import LogOutView from "../views/LogOutView.vue";
-import ManagementView from "../views/ManagementView.vue";
-import MeetingView from "../views/MeetingView";
-import RoleView from "../views/RoleView.vue";
-import ScheduleView from "../views/ScheduleView.vue";
-import SettingView from "../views/SettingView.vue";
-import StaffLeaveView from "../views/StaffLeaveView.vue";
+// import HomeView from '../views/pages/HomeView.vue'
+import DashboardView from "../views/pages/DashboardView.vue";
+import AccountView from "../views/pages/AccountView.vue";
+import DatabaseView from "../views/pages/DatabaseView.vue";
+import EmployeeView from "../views/pages/EmployeeView.vue";
+import EventView from "../views/pages/EventView.vue";
+import ImportExportView from "../views/pages/ImportExportView.vue";
+import LogOutView from "../views/pages/LogOutView.vue";
+import ManagementView from "../views/pages/ManagementView.vue";
+import MeetingView from "../views/pages/MeetingView";
+import RoleView from "../views/pages/RoleView.vue";
+import ScheduleView from "../views/pages/ScheduleView.vue";
+import SettingView from "../views/pages/SettingView.vue";
+import StaffLeaveView from "../views/pages/StaffLeaveView.vue";
 
 const routes = [
   {
     path: "/",
-    name: "dashboardView",
+    name: "DashboardView",
     component: DashboardView,
+    children: [
+      {
+        path: "/DashboardView",
+        name: "DashboardView",
+        component: DashboardView,
+      }
+    ]
   },
   {
     path: "/AccountView",
@@ -83,7 +90,7 @@ const routes = [
   {
     path: "/about",
     name: "about",
-    component: () => import("../views/AboutView.vue"),
+    component: () => import("../views/pages/AboutView.vue"),
   },
 ];
 

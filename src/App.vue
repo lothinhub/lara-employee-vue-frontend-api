@@ -1,9 +1,8 @@
 <template>
   <v-app>
-    <MenuBar />
-    <AsideBar />
     <v-main>
-      <router-view />
+      <MenuBar />
+      <AsideBar/>
     </v-main>
   </v-app>
 </template>
@@ -15,7 +14,7 @@ export default {
   components: {
     AsideBar,
     MenuBar,
-  },
+},
   data: () => ({
     //
   }),

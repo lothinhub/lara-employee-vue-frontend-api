@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h2>Log Out</h2>
   </div>
 </template>
 
