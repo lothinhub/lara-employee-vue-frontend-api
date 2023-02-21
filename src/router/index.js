@@ -1,5 +1,4 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-// import HomeView from '../views/pages/HomeView.vue'
 import DashboardView from "../views/pages/DashboardView.vue";
 import AccountView from "../views/pages/AccountView.vue";
 import DatabaseView from "../views/pages/DatabaseView.vue";
@@ -88,9 +87,9 @@ const routes = [
     component: StaffLeaveView,
   },
   {
-    path: "/about",
+    path: "/UsersView",
     name: "about",
-    component: () => import("../views/pages/AboutView.vue"),
+    component: () => import("../views/pages/UsersView.vue"),
   },
 ];
 

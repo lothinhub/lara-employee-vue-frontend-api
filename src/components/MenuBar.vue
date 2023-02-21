@@ -1,6 +1,5 @@
 <template>
-    <v-card class="overflow-auto mx-auto" min-width="1520" width="448">
-
+    <v-card class="overflow-auto mx-auto" min-width="520" width="1519">
         <v-toolbar color="primary">&nbsp;&nbsp;&nbsp;
             <lord-icon src="https://cdn.lordicon.com/tyounuzx.json" trigger="loop" delay="1000"
                 colors="primary:#e83a30,secondary:#e8e230" style="width:32px;height:32px">
